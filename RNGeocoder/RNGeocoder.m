@@ -83,6 +83,7 @@ RCT_EXPORT_METHOD(geocodeAddress:(NSString *)address errorCallback: (RCTResponse
          @"lng": [NSNumber numberWithDouble:placemark.location.coordinate.longitude],
          },
      @"country": placemark.country ?: [NSNull null],
+     @"ISOcountryCode": placemark.ISOcountryCode ?: [NSNull null],
      @"locality": placemark.locality ?: [NSNull null],
      @"subLocality": placemark.subLocality ?: [NSNull null],
      @"thoroughfare": placemark.thoroughfare ?: [NSNull null],
